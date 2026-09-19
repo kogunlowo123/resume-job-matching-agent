@@ -1,0 +1,12 @@
+# Skills here are added to the built-in taxonomy. An entry with an existing id replaces it.
+skills:
+  - id: cobol
+    name: COBOL
+    category: language
+    aliases: [cobol85, "cobol 85"]
+    related: []
+  - id: mainframe
+    name: Mainframe
+    category: platform
+    aliases: [z/os, "ibm z", jcl]
+    related: [cobol]

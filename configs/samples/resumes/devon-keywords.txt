@@ -1,0 +1,10 @@
+Devon Reyes
+devon.reyes@example.org
+
+SKILLS
+Python, Java, Go, Kubernetes, Docker, Terraform, AWS, Azure, GCP, Kafka, Spark, PostgreSQL, MongoDB, React, Node.js, GraphQL
+
+EXPERIENCE
+Office Administrator, Summit Supplies (2016 - 2023)
+- Responsible for scheduling and filing.
+- Helped with ordering and invoices.

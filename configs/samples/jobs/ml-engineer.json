@@ -1,0 +1,9 @@
+{
+  "title": "Machine Learning Engineer",
+  "company": "Contoso Health",
+  "must": ["python", "ml:3", "pytorch", "mlops"],
+  "nice": ["spark", "kubernetes", "statistics"],
+  "min_years": 4,
+  "seniority": "senior",
+  "education": "bachelor"
+}

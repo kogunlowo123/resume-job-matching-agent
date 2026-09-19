@@ -1,0 +1,25 @@
+# Scoring policy. Every key is optional; these are the defaults.
+# The score is 100 * sum(weight * component) / sum(weight) over the components a job specifies.
+weight_must: 0.55
+weight_nice: 0.15
+weight_experience: 0.15
+weight_seniority: 0.10
+weight_education: 0.05
+
+# How much evidence counts. Strength is 0 to 1 per required skill.
+listed_strength: 0.4     # named in a skills list but never used in a role
+implied_factor: 0.8      # implied by a shown skill (Kubernetes implies containers)
+related_factor: 0.35     # a neighbour skill (PostgreSQL for MySQL); never counts as met
+recent_months: 24        # skill last used within this many months: full strength
+dated_months: 60         # within this: dated_factor; older: stale_factor
+recent_factor: 1.0
+dated_factor: 0.85
+stale_factor: 0.7
+
+# Labels
+strong_min: 75           # also needs every must-have skill shown
+possible_min: 50
+
+# Resume review
+quantified_ratio_min: 0.3
+max_gap_months: 6
