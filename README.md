@@ -38,6 +38,8 @@ flowchart LR
 
 ## Quick start
 
+Requires Python 3.10 or newer.
+
 ```bash
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 python -m pip install -e ".[dev]"
@@ -193,7 +195,9 @@ Global option: `--as-of YYYY-MM-DD`. Exit codes: 0 success, 1 a gate failed, 2 i
 
 Settings come from `JOBMATCH_*` environment variables or a `.env` file. See [`.env.example`](.env.example).
 Optional model-written summaries (`--summary`) use OpenAI or Anthropic and receive only the job title, score,
-counts and skill names. Without a provider a deterministic summary is used.
+counts and skill names. Without a provider a deterministic summary is used. The provider is chosen with
+`JOBMATCH_LLM_PROVIDER` (`none`, `openai` or `anthropic`); the matching API key is the only required variable
+for that provider, and everything else has a default.
 
 ## Development
 
